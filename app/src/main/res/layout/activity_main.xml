@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Red"
+            android:textStyle="bold" />
+        <SeekBar
+            android:id="@+id/seekRed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="255" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Green"
+            android:textStyle="bold" />
+        <SeekBar
+            android:id="@+id/seekGreen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="255" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Blue"
+            android:textStyle="bold" />
+        <SeekBar
+            android:id="@+id/seekBlue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="255" />
+
+        <View
+            android:id="@+id/previewColor"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="16dp"
+            android:background="#000000" />
+
+        <TextView
+            android:id="@+id/hexCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="#000000"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp" />
+
+        <EditText
+            android:id="@+id/inputName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nama warna"
+            android:layout_marginTop="16dp" />
+
+        <Button
+            android:id="@+id/btnAddColor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Color"
+            android:layout_marginTop="12dp" />
+
+        <Button
+            android:id="@+id/btnViewColors"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lihat Warna Tersimpan"
+            android:layout_marginTop="8dp" />
+
+    </LinearLayout>
+</ScrollView>
