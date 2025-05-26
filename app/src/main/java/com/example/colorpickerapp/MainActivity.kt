@@ -13,7 +13,7 @@ class MainActivity : AppCompatActivity() {
 
     private lateinit var preview: View
     private lateinit var hexCode: TextView
-    private lateinit var nameInput: EditText
+    private lateinit var KetInput: EditText
     private var red = 0
     private var green = 0
     private var blue = 0
@@ -30,7 +30,7 @@ class MainActivity : AppCompatActivity() {
         val seekBlue = findViewById<SeekBar>(R.id.seekBlue)
         preview = findViewById(R.id.previewColor)
         hexCode = findViewById(R.id.hexCode)
-        nameInput = findViewById(R.id.inputName)
+        KetInput = findViewById(R.id.inputKeterangan)
 
         val listener = object : SeekBar.OnSeekBarChangeListener {
             override fun onProgressChanged(sb: SeekBar?, p: Int, fromUser: Boolean) {
@@ -50,7 +50,7 @@ class MainActivity : AppCompatActivity() {
 
         findViewById<Button>(R.id.btnAddColor).setOnClickListener {
             val hex = String.format("#%02X%02X%02X", red, green, blue)
-            val name = nameInput.text.toString()
+            val name = KetInput.text.toString()
 
             if (name.isBlank()) {
                 Toast.makeText(this, "Nama warna wajib diisi!", Toast.LENGTH_SHORT).show()
